@@ -3,4 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="themeColor">#56abe4</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="light_alpha_white">#33FFFFFF</color>
+    <color name="alpha_white">#bbffffff</color>
+    <color name="title_bar_color">@color/themeColor</color>
+    <color name="title_bar_text_color">#fff</color>
+    <color name="title_bar_color_press">#368bc4</color>
+    <color name="title_bar_color_light">#bb56abe4</color>
+    <color name="title_bar_color_alpha">#5556abe4</color>
+    <color name="title_bar_color_disable">#8856abe4</color>
 </resources>

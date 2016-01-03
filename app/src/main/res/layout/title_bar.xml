@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@color/themeColor">
+
+    <RelativeLayout
+        android:id="@+id/titlebar_rl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@drawable/btn_selector_titlebar"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/titlebar_iv_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_chevron_left" />
+
+        <TextView
+            android:id="@+id/titlebar_tv_back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/titlebar_iv_back_icon"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/title_bar_text_color"
+            android:textSize="@dimen/title_secondary_text_size" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/titlebar_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="120dp"
+        android:singleLine="true"
+        android:text="首页"
+        android:textColor="@color/title_bar_text_color"
+        android:textSize="@dimen/title_primary_text_size" />
+
+    <TextView
+        android:id="@+id/titlebar_tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/btn_selector_titlebar"
+        android:gravity="center"
+        android:textColor="@color/title_bar_text_color"
+        android:textSize="@dimen/title_secondary_text_size"
+        android:visibility="gone"
+        tools:text="右边"
+        tools:visibility="visible" />
+</RelativeLayout>
