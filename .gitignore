@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+app/build
+.gradle
+gradle
+local.properties
+Team.iml
+app/app.iml
+app/proguard-rules.pro
