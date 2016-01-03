@@ -14,7 +14,7 @@ public class ExampleActivity extends BasePageActivity implements View.OnClickLis
 
     @Override
     protected void setLayoutView() {
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_example);
     }
 
     @Override
