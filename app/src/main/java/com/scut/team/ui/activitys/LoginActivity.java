@@ -4,6 +4,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.scut.team.R;
 import com.scut.team.model.User;
@@ -19,6 +20,7 @@ public class LoginActivity extends BasePageActivity {
     private EditText mMail;
     private EditText mPassword;
     private Button mComfirm;
+    private TextView mCancel;
 
     @Override
     protected void setLayoutView() {
@@ -30,6 +32,7 @@ public class LoginActivity extends BasePageActivity {
         mMail = (EditText) findViewById(R.id.login_et_mail);
         mPassword = (EditText) findViewById(R.id.login_et_password);
         mComfirm = (Button) findViewById(R.id.login_btn_comfirm);
+        mCancel = (TextView) findViewById(R.id.login_tv_cancel);
     }
 
     @Override
@@ -48,10 +51,10 @@ public class LoginActivity extends BasePageActivity {
                 User user = new User();
                 user.setEmail(mail);
                 user.setPassword(password);
-                user.login(LoginActivity.this, new SaveListener() {
+                user.login(getBaseContext(), new SaveListener() {
                     @Override
                     public void onSuccess() {
-                        redirectToActivity(LoginActivity.this,MainActivity.class);
+                        redirectToActivity(getBaseContext(),MainActivity.class);
                     }
 
                     @Override
@@ -59,6 +62,13 @@ public class LoginActivity extends BasePageActivity {
                         showToast("邮箱或密码错误");
                     }
                 });
+            }
+        });
+
+        mCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
     }
