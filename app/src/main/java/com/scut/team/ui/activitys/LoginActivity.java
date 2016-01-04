@@ -44,7 +44,7 @@ public class LoginActivity extends BasePageActivity {
             public void onClick(View v) {
                 String mail = mMail.getText().toString();
                 String password = mPassword.getText().toString();
-                if(TextUtils.isEmpty(mail)||TextUtils.isEmpty(password)){
+                if (TextUtils.isEmpty(mail) || TextUtils.isEmpty(password)) {
                     //do not allow the empty String of mail or password
                     return;
                 }
@@ -54,7 +54,7 @@ public class LoginActivity extends BasePageActivity {
                 user.login(getBaseContext(), new SaveListener() {
                     @Override
                     public void onSuccess() {
-                        redirectToActivity(getBaseContext(),MainActivity.class);
+                        redirectToActivity(getBaseContext(), MainActivity.class);
                     }
 
                     @Override

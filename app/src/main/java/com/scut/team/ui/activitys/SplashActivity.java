@@ -1,6 +1,5 @@
 package com.scut.team.ui.activitys;
 
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -36,14 +35,14 @@ public class SplashActivity extends BasePageActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                redirectToActivity(getBaseContext(),RegisterActivity.class);
+                redirectToActivity(getBaseContext(), RegisterActivity.class);
             }
         });
 
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               redirectToActivity(getBaseContext(),LoginActivity.class);
+                redirectToActivity(getBaseContext(), LoginActivity.class);
             }
         });
     }

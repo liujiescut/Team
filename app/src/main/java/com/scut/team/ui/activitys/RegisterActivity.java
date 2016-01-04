@@ -49,7 +49,9 @@ public class RegisterActivity extends BasePageActivity {
                         String username = mUsername.getText().toString();
                         String mail = mMail.getText().toString();
                         String password = mPassword.getText().toString();
-                        if(TextUtils.isEmpty(username)||TextUtils.isEmpty(mail)||TextUtils.isEmpty(password)){
+                        if (TextUtils.isEmpty(username)
+                                || TextUtils.isEmpty(mail)
+                                || TextUtils.isEmpty(password)) {
                             //do not allow the empty String of mail or password
                             return;
                         }
@@ -62,7 +64,7 @@ public class RegisterActivity extends BasePageActivity {
                             public void onSuccess() {
                                 showToast("注册成功");
                                 finish();
-                                redirectToActivity(getBaseContext(),LoginActivity.class);
+                                redirectToActivity(getBaseContext(), LoginActivity.class);
                             }
 
                             @Override

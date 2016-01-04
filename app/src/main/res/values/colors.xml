@@ -15,4 +15,9 @@
     <color name="title_bar_color_light">#bb56abe4</color>
     <color name="title_bar_color_alpha">#5556abe4</color>
     <color name="title_bar_color_disable">#8856abe4</color>
+
+    <color name="light_grey">#b8b8b8</color>
+    <color name="press_grey">#e8e8e8</color>
+    <color name="text_red">#eb4f38</color>
+    <color name="defalut">#E8E8E7</color>
 </resources>
