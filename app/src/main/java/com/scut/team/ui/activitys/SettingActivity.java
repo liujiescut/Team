@@ -73,11 +73,8 @@ public class SettingActivity extends BasePageActivity {
         logoff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //取消闹钟队列
                 AlarmHelper.getInstance().cancelAll();
-                //清除数据库
                 DBhelper.getInstance().drop();
-                //清除残留cookie
                 SpUtils spUtils = new SpUtils(getContext());
                 spUtils.clear();
                 getActivity().finish();
