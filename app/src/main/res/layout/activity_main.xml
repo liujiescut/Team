@@ -3,5 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.scut.team.ui.activitys.MainActivity">
-    <include layout="@layout/title_bar"/>
+    <include
+        android:id="@+id/main_titlebar"
+        layout="@layout/title_bar"/>
+
+    <com.yydcdut.sdlv.SlideAndDragListView
+        android:id="@+id/main_lv_my_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_titlebar">
+    </com.yydcdut.sdlv.SlideAndDragListView>
 </RelativeLayout>

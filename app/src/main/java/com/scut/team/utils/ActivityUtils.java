@@ -48,7 +48,7 @@ public class ActivityUtils {
     }
 
     /**
-     * 移除 Activity栈 中所有的额Activity
+     * 移除 Activity栈 中所有的Activity
      */
     public synchronized void removeAllActivity() {
         for (Activity ac : activityList) {

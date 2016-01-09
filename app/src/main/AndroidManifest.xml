@@ -19,8 +19,9 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".ui.activitys.MainActivity"
-            android:launchMode="singleTask">
+            android:name=".ui.activitys.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,13 +30,27 @@
         </activity>
 
         <activity
-            android:name=".ui.activitys.ExampleActivity"
+            android:name=".ui.activitys.MainActivity"
             android:launchMode="singleTask"/>
 
         <activity
             android:name=".ui.activitys.LoginActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activitys.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activitys.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activitys.SearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activitys.CardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
