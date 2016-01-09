@@ -7,4 +7,5 @@ import com.scut.team.ui.base.BaseFragment;
  * Created by host on 2016/1/8.
  */
 public class CardListFragment extends BaseFragment{
+
 }
